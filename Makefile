@@ -1,4 +1,4 @@
-.PHONY: all build clean install
+.PHONY: all build clean deps install
 
 PREFIX=/usr/local
 BIN=${PREFIX}/bin
@@ -16,6 +16,9 @@ build:
 clean:
 	@echo "cleaning..."
 	@rm -rf build
+
+deps:
+	@sudo apt-get install libssl-dev libvips-dev libsixel-dev libchafa-dev libtbb-dev
 
 install: build
 	@echo "installing..."
