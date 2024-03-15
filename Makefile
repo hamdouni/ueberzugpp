@@ -25,3 +25,7 @@ install: build
 	@cp -f build/ueberzugpp ${BIN}/
 	@ln -sf ${BIN}/ueberzugpp ${BIN}/ueberzug
 
+uninstall:
+	@rm -f /usr/local/bin/ueberzug
+	@rm -f /usr/local/bin/ueberzugpp
+
