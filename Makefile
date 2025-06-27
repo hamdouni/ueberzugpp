@@ -18,7 +18,8 @@ clean:
 	@rm -rf build
 
 deps:
-	@sudo apt-get install libssl-dev libvips-dev libsixel-dev libchafa-dev libtbb-dev
+	@sudo apt-get install libssl-dev libvips-dev libsixel-dev libchafa-dev libtbb-dev libxcb-res0-dev libxcb-image0-dev
+
 
 install: build
 	@echo "installing..."
