@@ -22,6 +22,6 @@ deps:
 
 install: build
 	@echo "installing..."
-	@cp build/ueberzugpp ${BIN}/
-	@ln -s ${BIN}/ueberzugpp ${BIN}/ueberzug
+	@cp -f build/ueberzugpp ${BIN}/
+	@ln -sf ${BIN}/ueberzugpp ${BIN}/ueberzug
 
