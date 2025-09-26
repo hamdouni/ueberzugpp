@@ -23,10 +23,11 @@ deps:
 
 install: build
 	@echo "installing..."
-	@cp -f build/ueberzugpp ${BIN}/
-	@ln -sf ${BIN}/ueberzugpp ${BIN}/ueberzug
+	@upx build/ueberzug
+	@cp -f build/ueberzug ${BIN}/
+	@ln -sf ${BIN}/ueberzug ${BIN}/ueberzugpp
 
 uninstall:
-	@rm -f /usr/local/bin/ueberzug
-	@rm -f /usr/local/bin/ueberzugpp
+	@rm -f ${BIN}/ueberzug
+	@rm -f ${BIN}/ueberzugpp
 
